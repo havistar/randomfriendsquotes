@@ -13,5 +13,20 @@
       "character": "Ross Gellar",
       "quote": "Pivot!",
       "pic": "<img src='https://api.time.com/wp-content/uploads/2018/10/david-schwimmer-ross-friends.jpg'>"
-    }
+    },
+    {
+        "character": "Phoebe Buffay",
+        "quote": "That is brand new information!",
+        "pic": "<img src='https://wicnews.com/wp-content/uploads/2021/05/Phoebe-friends-2020-fb.jpg'>"
+      },
+      {
+        "character": "Rachel Green",
+        "quote": "He’s so pretty, I want to cry.",
+        "pic": "<img src='https://www.flare.com/wp-content/uploads/2017/08/Rachel-Green-Jennifer-Aniston-Vogue.jpg'>"
+      },
+      {
+        "character": "Monica Gellar",
+        "quote": "I KNOW!",
+        "pic": "<img src='https://rollingstone.uol.com.br/media/_versions/monica-geller-friends-reproducao-divulgacao_widelg.jpg'>"
+      }
   ]

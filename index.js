@@ -17,7 +17,3 @@ function generateQuote(){
     console.log(err); 
     });
  }
-
-document.addEventListener("DOMContentLoaded", () => {
-    generateQuote()
-    });

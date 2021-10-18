@@ -1,7 +1,7 @@
 
   body {
-    background: url('https://www.gingerandivory.com/wp-content/uploads/2019/01/friends-ill-be-there-for-you.jpg') center no-repeat scroll 50%;
-    background-size: cover;
+    background: url('https://www.gingerandivory.com/wp-content/uploads/2019/01/friends-ill-be-there-for-you.jpg');
+    background-size: 50%;
     background-attachment: fixed;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;

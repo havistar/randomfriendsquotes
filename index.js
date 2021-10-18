@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+    generateQuote()
+
+    });
+
 let btn = document.getElementById('btn').addEventListener('click', () => {
     generateQuote();
   });

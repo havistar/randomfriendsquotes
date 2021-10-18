@@ -11,9 +11,7 @@ function generateQuote(){
          return data.json();
     })
     .then(function(data){    
-    document.getElementById("quote").innerHTML = data.content; document.querySelector(".character").innerHTML = "- " + data.character;
+    document.getElementById("quote").innerHTML = data.content; 
+    document.querySelector(".character").innerHTML = "- " + data.character;
    })
- .catch(function(err) {
-    console.log(err); 
-    });
- }
+

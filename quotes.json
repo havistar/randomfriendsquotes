@@ -58,5 +58,35 @@
           "character": "Monica Gellar",
           "quote": "I’ve got this uncontrollable need to please people.",
           "pic": "<img src='https://rollingstone.uol.com.br/media/_versions/monica-geller-friends-reproducao-divulgacao_widelg.jpg'>"
-        }
+        },
+        {
+          "character": "Joey Tribbiani",
+          "quote": "Joey doesn’t share food!",
+          "pic": "<img src='https://static.onecms.io/wp-content/uploads/sites/13/2016/07/03/friends.jpg'>"
+        },
+        {
+          "character": "Chandler Bing",
+          "quote": "I had a very long, hard day.",
+          "pic": "<img src='https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F08%2Fgettyimages-138426899.jpg'>"
+        },
+        {
+          "character": "Ross Gellar",
+          "quote": "Unagi.",
+          "pic": "<img src='https://api.time.com/wp-content/uploads/2018/10/david-schwimmer-ross-friends.jpg'>"
+        },
+        {
+            "character": "Phoebe Buffay",
+            "quote": "Something is wrong with the left phalange.",
+            "pic": "<img src='https://wicnews.com/wp-content/uploads/2021/05/Phoebe-friends-2020-fb.jpg'>"
+          },
+          {
+            "character": "Rachel Green",
+            "quote": "Isn’t that just kick-you-in-the-crotch, spit-on-your-neck fantastic?",
+            "pic": "<img src='https://www.flare.com/wp-content/uploads/2017/08/Rachel-Green-Jennifer-Aniston-Vogue.jpg'>"
+          },
+          {
+            "character": "Monica Gellar",
+            "quote": "Welcome to the real world. It sucks. You’re gonna love it.",
+            "pic": "<img src='https://rollingstone.uol.com.br/media/_versions/monica-geller-friends-reproducao-divulgacao_widelg.jpg'>"
+          }
   ]

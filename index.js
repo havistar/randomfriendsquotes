@@ -2,29 +2,38 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
   });
   
-  function getQuote() {
-    const xhr = new XMLHttpRequest();
-    const url = 'quotes.json';
+  const text=document.getElementById("quote");
+  const author=document.getElementById("character");
   
-    xhr.open('GET', url, true);
+  const getQuote = async () =>
+  {
+      //api for quotes
+      var url="https://parade.com/1213691/alexandra-hurtado/friends-tv-show-quotes/";    
   
-    xhr.onload = function() {
-      if (this.status === 200) {
-        let quotes = JSON.parse(this.responseText);
+      // fetch the data from api
+      const response=await fetch(url);
+      console.log(typeof response);
+      //convert response to json and store it in quotes array
+      const allQuotes = await response.json();
   
-        for (i in quotes) {
-          outputQuote = quotes[i].quote;
-          outputCharacter = quotes[i].character;
+      // Generates a random number between 0 and the length of the quotes array
+      const indx = Math.floor(Math.random()*allQuotes.length);
   
-          queryNum = 40;
-          randomNum = Math.floor(Math.random() * queryNum + 1);
+      //Store the quote present at the randomly generated index
+      const quote=allQuotes[indx].text;
+      
+      //Store the author of the respective quote
+      const character=allQuotes[indx].character;
   
-          document.getElementById('output').innerHTML = `
-          "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
-          ${quotes[randomNum].pic}
-          `;
-        }
+      if(auth==null)
+      {
+          author = "Anonymous";
       }
-    };
-    xhr.send();
+   
+      //function to dynamically display the quote and the author
+      text.innerHTML=quote;
+      character.innerHTML="~ "+character;
+  
   }
+  
+  getQuote();

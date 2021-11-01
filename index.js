@@ -2,29 +2,20 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
   });
   
-  function getQuote() {
-    const xhr = new XMLHttpRequest();
-    const url = 'quotes.json';
-  
-    xhr.open('GET', url, true);
-  
-    xhr.onload = function() {
-      if (this.status === 200) {
-        let quotes = JSON.parse(this.responseText);
-  
-        for (i in quotes) {
-          outputQuote = quotes[i].quote;
-          outputCharacter = quotes[i].character;
-  
-          queryNum = 40;
-          randomNum = Math.floor(Math.random() * queryNum + 1);
-  
-          document.getElementById('output').innerHTML = `
-          "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
-          ${quotes[randomNum].pic}
-          `;
-        }
-      }
-    };
-    xhr.send();
-  }
+
+  const url = "https://parade.com/1213691/alexandra-hurtado/friends-tv-show-quotes/";
+function getQuote(){
+   fetch(url)
+  .then(function(data) {
+         return data.json();
+    })
+    .then(function(data){    
+    document.getElementById("quote").innerHTML = data.content; document.querySelector(".character").innerHTML = "- " + data.character;
+   })
+ .catch(function(err) {
+    console.log(err); 
+    });
+ }
+ // Repeat generateQuote() every 10 seconds
+setInterval(generateQuote() ,10000);
+//Note - 10000 milliseconds = 10

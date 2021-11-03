@@ -3,7 +3,7 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
   });
   
 
-  const url = "https://parade.com/1213691/alexandra-hurtado/friends-tv-show-quotes/";
+  const url = "https://friends-quotes-api.herokuapp.com/quotes";
 function getQuote(){
    fetch(url)
   .then(function(data) {

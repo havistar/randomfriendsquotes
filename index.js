@@ -1,7 +1,9 @@
+var audio = new Audio('https://www.televisiontunes.com/uploads/audio/Friends.mp3');
+audio.play();
+
 let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
   });
-  
 
   const url = "https://friends-quotes-api.herokuapp.com/quotes";
 function getQuote(){
@@ -17,6 +19,3 @@ function getQuote(){
     console.log(err); 
     });
  }
- // Repeat generateQuote() every 10 seconds
-setInterval(generateQuote() ,10000);
-//Note - 10000 milliseconds = 10

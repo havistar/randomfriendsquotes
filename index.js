@@ -5,17 +5,8 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
   });
 
-  const url = "https://friends-quotes-api.herokuapp.com/quotes";
-function getQuote(){
-   fetch(url)
-  .then(function(data) {
-         return data.json();
-    })
-    .then(function(data){    
-    document.getElementById("quote").innerHTML = data.content; 
-    document.querySelector(".character").innerHTML = "- " + data.character;
-   })
- .catch(function(err) {
-    console.log(err); 
-    });
- }
+  fetch('https://friends-quotes-api.herokuapp.com/quotes')
+  .then(response => response.json())
+  .then(data => {
+    console.log(`${data.content} —${data.character}`)
+  })

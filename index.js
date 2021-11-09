@@ -14,11 +14,6 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
     })
   }
   
-  getQuote().then(quote => {
-    const text = quote.text;
-    const character = quote.character;
-    console.log(text, character)
-  })
 
   function getQuote() {
     if (this.status === 200) {

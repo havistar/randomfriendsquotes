@@ -34,5 +34,3 @@ let btn = document.getElementById('btn').addEventListener('click', () => {
     }
   };
 
- window.addEventListener("load", getQuote);
- btn.addEventListener("click", getQuote)

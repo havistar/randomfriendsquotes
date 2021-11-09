@@ -1,31 +1,19 @@
 
-let btn = document.getElementById('btn').addEventListener('click', () => {
-    getQuote();
-  });
   
-  function getQuote() {
-    const xhr = new XMLHttpRequest();
-    const url = 'quotes.json';
-  
-    xhr.open('GET', url, true);
-  
-    xhr.onload = function() {
-      if (this.status === 200) {
-        let quotes = JSON.parse(this.responseText);
-  
-        for (i in quotes) {
-          outputQuote = quotes[i].quote;
-          outputCharacter = quotes[i].character;
-  
-          queryNum = 40;
-          randomNum = Math.floor(Math.random() * queryNum + 1);
-  
-          document.getElementById('output').innerHTML = `
-          "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
-          ${quotes[randomNum].pic}
-          `;
-        }
-      }
-    };
-    xhr.send();
-  }
+ let quote = document.getElementById("quote");
+ let character = document.getElementById("character");
+ let btn = document.getElementById("btn");
+
+ const url = "quotes.json";
+
+ let getQuote = () => {
+     fetch(url)
+     .then((data) => data.json())
+     .then((item) => {
+         quote.innerText = item.content;
+         character.innerText = item.character;
+     });
+ };
+
+ window.addEventListener("load", getQuote);
+ btn.addEventListener("click", getQuote);

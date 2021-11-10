@@ -1,71 +1,34 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
+
   body {
-    background-color: #058ddc;
-  }
-  
-  .wrapper {
-    width: 400px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  
-  .container {
-    width: 100%;
-    background-color: #ffffff;
-    min-height: 100px;
-    padding: 10px 40px;
-    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
-    position: relative;
-    border-radius: 8px;
+    background: url('https://ih1.redbubble.net/image.958797964.7866/flat,750x,075,f-pad,750x1000,f8f8f8.jpg') center no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
   }
-  .container h1{
-    font-size: 25px;
-    margin-top: -10px;
-    margin:  -40px;
-    color: white;
-    margin-bottom: 30px;
-    background: #1073be
+  
+  h1 {
+    font-family: Minus Cre;
+    font-weight: bold;
+    font-size: 20 px;
+  }
+  
+  #btn {
+    margin-top: .5rem;
+    padding: 1rem 2.9rem;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  
+  img {
+    margin-top: 2.5rem;
+    box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.49);
+    border-radius: 50%;
+    max-height: 300px;
+    width: 200px;
   }
 
-  .display{
-    background: #ffffff;
-    min-height:20px;
-    box-shadow: 0 0 20px rgba(0,139,253,0.25);
-  }
-  
-  .container p {
-    color: #066dd4;
-    line-height: 2;
-    font-size: 19px;
-  }
-  
-  .container h3::before{
-    content: "- ";
-  }
-  
-  .container h3 {
-    color: #0e045a;
-    margin: 20px 0 60px 0;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-  .container button {
-    background-color: #023b80;
-    border: none;
-    padding: 15px 45px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #ffffff;
-    cursor: pointer;
-  }
+   

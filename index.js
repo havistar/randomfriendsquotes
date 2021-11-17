@@ -8,6 +8,14 @@ document.addEventListener("click", myFunction);
 function myFunction() {
   alert ("I'll be there for you!");
 }
+
+document.querySelector('btn').addEventListener('mouseover', function(){
+  console.log('hi')
+})
+
+function sayHi(){
+  alert ()
+}
   
   function getQuote() {
     const xhr = new XMLHttpRequest();

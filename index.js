@@ -2,6 +2,12 @@
 let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
   });
+
+document.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("I'll be there for you!");
+}
   
   function getQuote() {
     const xhr = new XMLHttpRequest();

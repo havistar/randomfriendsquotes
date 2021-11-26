@@ -9,7 +9,7 @@ function myFunction() {
   alert ("I'll be there for you!");
 }
 
-document.addEventListener("mouseover", hoverColor);
+let btn = document.addEventListener("mouseover", hoverColor);
 
 function hoverColor() {
   btn.style.background = "red";

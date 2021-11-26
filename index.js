@@ -1,7 +1,10 @@
 
+document.addEventListener('DOMContentLoaded', () => {
 let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
+    console.log('clicked');
   });
+});
 
 document.addEventListener("click", myFunction);
 
@@ -9,11 +12,6 @@ function myFunction() {
   alert ("I'll be there for you!");
 }
 
-btn.document.addEventListener("mouseover", hoverColor);
-
-function hoverColor() {
-  btn.style.background = "red";
-}
   
   function getQuote() {
     const xhr = new XMLHttpRequest();

@@ -9,10 +9,11 @@ function myFunction() {
   alert ("I'll be there for you!");
 }
 
-document.querySelector('btn').addEventListener('mouseover', function(){
-  console.log('hi')
-})
+document.addEventListener("mouseover", hoverColor);
 
+function hoverColor() {
+  btn.style.background = "red";
+}
   
   function getQuote() {
     const xhr = new XMLHttpRequest();

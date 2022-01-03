@@ -21,7 +21,8 @@ function getQuote() {
 
   xhr.onload = function() {
     if (this.status === 200) {
-      let quotes = JSON.parse(quote);
+      const data = JSON.parse(jsonRawData);
+    const quotes = data.quotes;
 
       for (i in quotes) {
         outputQuote = quotes[i].quote;

@@ -22,8 +22,8 @@ function myFunction() {
     xhr.onload = function() {
       if (this.status === 200) {
         const jsonRawData = this.responseText;
-const data = JSON.parse(jsonRawData);
-const quotes = data.quotes;
+    const data = JSON.parse(jsonRawData);
+    const quotes = data.quote;
   
         for (i in quotes) {
           outputQuote = quotes[i].quote;

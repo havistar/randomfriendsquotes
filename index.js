@@ -31,7 +31,7 @@ function getQuote() {
         randomNum = Math.floor(Math.random() * queryNum + 1);
 
         document.getElementById('output').innerHTML = `
-        "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
+        "${quotes[randomNum].quotes}" - ${quotes[randomNum].character} <br>
         ${quotes[randomNum].pic}
         `;
       }

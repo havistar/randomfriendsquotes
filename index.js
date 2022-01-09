@@ -34,7 +34,7 @@ function getQuote() {
         "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
         ${quotes[randomNum].pic}
         `;
-        console.log(randomNum);
+        console.log(quote);
       }
     }
   };

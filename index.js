@@ -20,7 +20,7 @@ function getQuote() {
 
   xhr.onload = function() {
     if (this.status === 200) {
-      let quote = JSON.parse(this.responseText);
+      let quotes = JSON.parse(this.responseText);
 
       for (i in quotes) {
         outputQuote = quotes[i].quote;
@@ -33,7 +33,6 @@ function getQuote() {
         "${quotes[randomNum].quote}" - ${quotes[randomNum].character} <br>
         ${quotes[randomNum].pic}
         `;
-        console.log(quote);
       }
     }
   };

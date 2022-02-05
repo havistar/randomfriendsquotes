@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 let btn = document.getElementById('btn').addEventListener('click', () => {
     getQuote();
-    console.log('clicked');
   });
 });
 
@@ -21,7 +20,7 @@ function getQuote() {
 
   xhr.onload = function() {
     if (this.status === 200) {
-      let quotes = JSON.parse(this.responseText);
+      let quote = JSON.parse(this.responseText);
 
       for (i in quotes) {
         outputQuote = quotes[i].quote;
